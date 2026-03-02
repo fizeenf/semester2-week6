@@ -16,11 +16,25 @@ int factorial(int n) {
   return n * factorial(n - 1);
 }
 
+int combinations(int n, int r) {
+  return factorial(n) / (factorial(r) * factorial(n - r);
+}
+
+int permutations(int n, int r) {
+  return factorial(n) / factorial(n - r);
+}
+
+if r < 0 ZZ
+
 int main(int argc, char **argv) {
+
+
   /*
   The program should accept a command line argument as follows:
   ./combinatorials n C r
   ./combinatorials n P r
+
+
 
   where n and r are both positive integers, and r is always less than or equal to n.
 
@@ -40,4 +54,7 @@ int main(int argc, char **argv) {
   You should try and use functions to write your program.
 
   */
+
+if r 
+
 }
