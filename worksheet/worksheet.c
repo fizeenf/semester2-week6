@@ -93,7 +93,7 @@ int sum_array(int *arr, int n) {
     sum += arr[i];
   }
   // TODO: Implement this function
-  return 0; // Replace this
+  return sum; // Replace this
 }
 
 /**
