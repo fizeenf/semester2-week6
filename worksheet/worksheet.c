@@ -113,7 +113,7 @@ int sum_array(int *arr, int n) {
  * Hint: Swap elements from both ends, moving toward the middle
  */
 void reverse_array(int *arr, int n) {
-  for (int i = 0; i < n/2;; i++) {
+  for (int i = 0; i < n/2; i++) {
     int temp1 = 0;
     temp1  = arr[i];
     arr[i] = arr[n-1-i];
