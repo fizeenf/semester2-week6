@@ -117,7 +117,7 @@ void reverse_array(int *arr, int n) {
     int temp1 = 0;
     temp1  = arr[i];
     arr[i] = arr[n-1-i];
-    arr[n-1-i] = temp1
+    arr[n-1-i] = temp1;
   }
   // TODO: Implement this function
 }
@@ -136,10 +136,17 @@ void reverse_array(int *arr, int n) {
  * Example: average([1,2], 2) returns 1.5
  */
 double average(int *arr, int n) {
+  int sum = 0;
+  for (int i = 0; i < n; i++) {
+    sum += arr[i];
+  }
+  return (double)sum / n;
+
+}
   // TODO: Implement this function
   // Hint: Be careful with integer division!
-  return 0.0; // Replace this
-}
+  // Replace this
+
 
 /**
  * Function 6: find_max
@@ -162,7 +169,16 @@ double average(int *arr, int n) {
 int find_max(int *arr, int n, int *index) {
   // TODO: Implement this function
   *index = 0;
-  return 0; // Replace this
+  int max = arr[0];
+
+  for (int i = 1 ; i < n; i++) {
+   if (arr[i] > max) {
+    max = arr[i];
+    *index = i;
+
+   }
+  }
+  return max; // Replace this
 }
 
 /* ============================================================
